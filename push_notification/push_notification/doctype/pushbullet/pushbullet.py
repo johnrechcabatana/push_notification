@@ -31,5 +31,4 @@ def push_notify(self, method):
 				message = "Cancelled"
 		
 			notify_msg = "{0} has been {1} by {2}".format(name,message,user)
-			frappe.msgprint(notify_msg)
 			push = pb.push_note(notify_msg, hostname+"/app/"+doctype.replace(" ", "-").lower()+"/"+name)
