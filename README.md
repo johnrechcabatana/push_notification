@@ -1,7 +1,36 @@
-## push_notification
+## Push Notification via PushBullet
+Description:
+Push notification will help the users to get updated even they have not login yet to the website.
+Purpose of this app is to alert all users on what document/doctype you have saved/submitted/cancel transaction
+## Example output
 
-push_notification
+![image](https://github.com/johnrechcabatana/push_notification/assets/54884098/9f996535-8fb9-4275-bf71-fb1b171be29a)
 
+
+## Installation (ERPNext)
+1. pip install pushbullet.py
+2. bench get-app https://github.com/johnrechcabatana/push_notification.git
+3. bench --site install-app push_notification
+
+## Setup PushBullet
+1. goto PushBUllet
+2. Fill up all fields
+
+## Example
+![image](https://github.com/johnrechcabatana/push_notification/assets/54884098/786706fa-cfde-4eda-b988-ea1f96a5d738)
+
+
+## Add PushBullet addon extension Firefox/Chrome
+FireFox
+https://addons.mozilla.org/en-US/firefox/addon/pushbullet/
+Chrome
+https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd?utm_source=ext_app_menu
+
+Signup and get the access token here https://www.pushbullet.com/#settings/account
+
+## NOTE
+To apply this notification for every users.
+Every user needs to install/addon PushBullet for their desire browser and login in the same account in where generated the accesstoken
 #### License
 
 MIT
