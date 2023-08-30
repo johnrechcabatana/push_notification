@@ -102,21 +102,22 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"*": {
+		"validate": "push_notification.push_notification.doctype.pushbullet.pushbullet.push_notify",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-#	"all": [
-#		"push_notification.tasks.all"
-#	],
+# 	"cron": {
+# 		"* * * * *": [
+# 			"push_notification.doctype.pushbullet.pushbullet.push_notif"
+# 		]
+# 	}
+# }
 #	"daily": [
 #		"push_notification.tasks.daily"
 #	],
@@ -129,7 +130,6 @@ app_license = "MIT"
 #	"monthly": [
 #		"push_notification.tasks.monthly"
 #	],
-# }
 
 # Testing
 # -------

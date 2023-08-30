@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 16:38:27.887429",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "accesstoken",
+  "hostname",
+  "enable",
+  "document"
+ ],
+ "fields": [
+  {
+   "fieldname": "accesstoken",
+   "fieldtype": "Data",
+   "label": "AccessToken"
+  },
+  {
+   "description": "http://192.168.5.1 or www.erp101.com",
+   "fieldname": "hostname",
+   "fieldtype": "Data",
+   "label": "HostName"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "description": "List of documents to be included in push notification\nEx: Purchase Order,Item,Sales Order,Suppler",
+   "fieldname": "document",
+   "fieldtype": "Long Text",
+   "label": "Document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-08-29 21:44:56.988123",
+ "modified_by": "Administrator",
+ "module": "push_notification",
+ "name": "PushBullet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
