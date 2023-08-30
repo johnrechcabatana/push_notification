@@ -31,6 +31,8 @@ Signup and get the access token here https://www.pushbullet.com/#settings/accoun
 ## NOTE
 To apply this notification for every users.
 Every user needs to install/addon PushBullet for their desire browser and login in the same account in where generated the accesstoken
+
+https://youtu.be/Co4uuGzc_fs
 #### License
 
 MIT
